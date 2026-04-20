@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.boardcomp {
+  width: 377px;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 24px 16px;
+}
+.container {
+  width: 348px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.container1 {
+  width: 345px;
+  height: 187px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input-container {
+  width: 345px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.input-container p {
+  font-family: Inter;
+  color: #71717a;
+}
+.Button button {
+  background-color: #3c82f6;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+.dad {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-container {
+  width: 345px;
+  height: 32px;
+  display: flex;
+  gap: 6px;
+}
+.All button {
+  background-color: #3c82f6;
+  border-radius: 6px;
+  padding: 4px 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Active button {
+  background-color: #f3f4f6;
+  color: black;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.complated button {
+  background-color: #f3f4f6;
+  color: black;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.container2 input {
+  width: 280px;
+  height: 40px;
+  border: solid grey 1px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+.texts2 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-family: "inter";
+}
+.texts {
+  width: 345px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.Power p {
+  color: #6b7280;
+  font-family: "Inter";
+  font-size: 12px;
+}
+.Pinecone p {
+  color: #3b73ed;
+  font-family: "Inter";
+  font-size: 12px;
+}
