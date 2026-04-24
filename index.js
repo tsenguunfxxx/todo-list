@@ -41,6 +41,11 @@ function renderTodos() {
     p.textContent = todo.taskName;
 
     taskDiv.appendChild(checkbox);
+    checkbox.checked = todo.isCompleted;
+    checkbox.onclick = function () {
+      todos[i].isCompleted = checkbox.checked;
+      console.log(this.checked);
+    };
     taskDiv.appendChild(p);
     texts2.appendChild(taskDiv);
 
@@ -59,7 +64,50 @@ function addTask() {
   taskInput.value = "";
   renderTodos();
 }
+function filtertodo(value) {
+  console.log("value", value);
+  if (value === "ALL") {
+    renderTodos();
+  } else if (value === "Active") {
+    texts2.innerHTML = "";
+    for (let i = 0; i < todos.length; i++) {
+      if (!todos[i].isCompleted) {
+        let todo = todos[i];
+        let checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        let taskDiv = document.createElement("div");
+        let p = document.createElement("p");
+        let deleteButton = document.createElement("button");
+        deleteButton.innerText = "delete";
 
+        deleteButton.onclick = function () {
+          todos.splice(i, 1);
+          renderTodos();
+        };
+        // checkbox.type = "checkbox";
+        taskDiv.className = "todo-item";
+        p.textContent = todo.taskName;
+
+        taskDiv.appendChild(checkbox);
+        checkbox.checked = todo.isCompleted;
+        checkbox.onclick = function () {
+          todos[i].isCompleted = checkbox.checked;
+          console.log(this.checked);
+        };
+        taskDiv.appendChild(p);
+        texts2.appendChild(taskDiv);
+
+        taskDiv.appendChild(deleteButton);
+      } else if (todos[i].isCompleted) {
+      }
+    }
+  }
+  // if (value==="Complated") {
+  //   .appendChild(div);
+  // } else {
+  //   todoList.appendChild();
+  // }
+}
 // let personas = [
 //   {
 //     age: 21,
